@@ -22,6 +22,7 @@ public class Servidor  {
             byte[]b = "Mensagem 1".getBytes();
             os.write(b);
             os.close();
+            System.out.println("Mensagem enviada para ");
         } catch (IOException ex) {
           ex.printStackTrace();
         }

@@ -20,7 +20,7 @@ public class ClienteTCP {
         try {
             
             System.out.println("Estabelecendo uma conexãp");
-            Socket s=  new Socket("localhost",1234);
+            Socket s=  new Socket("10.25.2.136",3030);
             InputStream is= s.getInputStream();
             byte[] b = new byte [1000];
             is.read(b); 
