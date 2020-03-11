@@ -15,6 +15,7 @@ public class Servidor  {
     
     public Servidor(){
         try {
+          
             ServerSocket ss= new ServerSocket(1234);
             System.out.println("aguardando novas conexões");
             Socket s=ss.accept();
@@ -23,6 +24,7 @@ public class Servidor  {
             os.write(b);
             os.close();
             System.out.println("Mensagem enviada para ");
+            
         } catch (IOException ex) {
           ex.printStackTrace();
         }

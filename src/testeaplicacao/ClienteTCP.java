@@ -18,15 +18,15 @@ public class ClienteTCP {
     
     public ClienteTCP(){
         try {
-            
+              while (true){
             System.out.println("Estabelecendo uma conexãp");
-            Socket s=  new Socket("10.25.2.136",3030);
+            Socket s=  new Socket("10.25.4.51",1234);
             InputStream is= s.getInputStream();
             byte[] b = new byte [1000];
             is.read(b); 
             is.close();
             System.out.println("Dados:"+ new String(b).trim());
-            
+              }
         }catch(UnknownHostException uhe){
             uhe.printStackTrace();
         }catch(IOException ioe){
